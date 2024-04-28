@@ -54,3 +54,65 @@ for(let i=1; i<10; i++){
 // el bucle for se utiliza cuando sabemos el numero de veces que queremos que se repita una condicion
 // el ciclo while se repite mientras la condicion sea verdadera
 
+/*let entrada = prompt("ingresa un dato")
+
+// repetimos con while hasta que el usuario ingrese "ESC"
+while(entrada != "ESC"){
+
+    alert("el usuario ingreso " + entrada);
+    //volvemos a solicistar un dato. en la proxima iteracion se evalua si no es ESC.
+    entrada = prompt("ingresa otro dato")
+}*/
+
+/*let iterar = true
+
+while( iterar === true){
+    console.log("imprimo mensaje por consola")
+    iterar = confirm("queres seguir en el bucle?")
+
+}*/
+
+// confirm es un alert con opciones de aceptar o cancelar
+//alert es solo el mensaje
+// confirm da opcion true o false
+
+//  do while garantizar que el bloque de codigo se interprete al menos una vez
+// esto se debe porque la condicion se ejetuta al final
+
+// caso de do while
+
+/*let contador = 6
+
+do{
+    console.log("el valor del contador es " + contador)
+    contador++
+}while(contador < 3)*/
+
+
+/*let contrasena = 123
+
+do{
+    let pass = prompt("ingresa contrase;a")
+}while(contador == pass)*/
+
+
+let identificar = true
+
+let intentos = 1
+
+do{
+    let usuario = prompt("ingresar el usuario, (solo tenes 3 intentos)")
+    if(usuario == null){
+        break
+    }
+
+    if( usuario == "pedro ramos" && intentos <=3){
+        alert("bienvenido bichito de luz a mi corazon")
+        identificar = false
+    }else{
+        intentos++
+        if(intentos >3){
+            alert("vos no sos mi bichito de luz")
+        }
+    }
+}while(identificar)
